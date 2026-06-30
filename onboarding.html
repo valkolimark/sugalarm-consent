@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Early Access &mdash; Sugalarm</title>
+<meta name="description" content="Join the Sugalarm Early Access program — help test smart glucose alerts that keep the whole household in the loop.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b1320;
+    --bg-elev: #121d30;
+    --bg-card: #16233a;
+    --line: #243349;
+    --text: #e7eefb;
+    --muted: #9fb1cc;
+    --faint: #6f819c;
+    --accent: #4f9cf5;
+    --accent-soft: rgba(79,156,245,0.12);
+    --drop-red: #e0445a;
+    --ok: #4ec98a;
+    --warn: #f3b14e;
+    --radius: 14px;
+    --maxw: 760px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(1200px 600px at 70% -10%, rgba(79,156,245,0.10), transparent 60%),
+      radial-gradient(900px 500px at -10% 10%, rgba(224,68,90,0.07), transparent 55%),
+      var(--bg);
+    color: var(--text);
+    font-family: "Public Sans", system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* Header */
+  header { padding: 56px 0 30px; border-bottom: 1px solid var(--line); }
+  .brand { display: inline-block; }
+  .logo { width: 340px; max-width: 80%; height: auto; display: block; }
+  .eyebrow {
+    margin: 26px 0 8px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin: 0 0 14px;
+  }
+  .lede { font-size: 19px; color: var(--muted); max-width: 60ch; margin: 0; }
+
+  /* Sections */
+  section { padding: 34px 0; border-bottom: 1px solid var(--line); }
+  h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: 23px;
+    letter-spacing: -0.01em;
+    margin: 0 0 14px;
+  }
+  p { color: var(--muted); }
+  .lead-in { max-width: 62ch; }
+
+  /* Step / bullet list */
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+  .steps li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+  }
+  .steps .n {
+    flex: 0 0 auto;
+    width: 30px; height: 30px;
+    display: grid; place-items: center;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .steps .t { margin: 0; }
+  .steps .t strong { color: var(--text); font-weight: 600; }
+  .steps .t span { display: block; color: var(--muted); font-size: 15px; margin-top: 2px; }
+
+  /* Sign-up form card */
+  .signup { padding-top: 38px; }
+  .sub { color: var(--muted); margin: 0 0 22px; max-width: 60ch; }
+  .form-card {
+    background: #ffffff;
+    color: #0b1320;
+    border-radius: var(--radius);
+    padding: 26px 24px;
+    box-shadow: 0 18px 50px rgba(0,0,0,0.35);
+    border: 1px solid var(--line);
+  }
+  .form-card a { color: #2563eb; }
+
+  /* Safety note */
+  .note {
+    background: rgba(243,177,78,0.10);
+    border: 1px solid rgba(243,177,78,0.35);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    color: var(--text);
+    font-size: 15px;
+  }
+  .note strong { color: var(--warn); }
+
+  .alt { margin: 22px 0 0; color: var(--muted); font-size: 15px; }
+  .alt .ph { color: var(--warn); }
+
+  /* Footer */
+  footer { padding: 38px 0 70px; }
+  footer h2 { font-size: 18px; margin-bottom: 10px; }
+  .links { display: flex; flex-wrap: wrap; gap: 18px; margin: 4px 0 22px; }
+  .ph { color: var(--warn); }
+  footer p { color: var(--faint); font-size: 14px; margin: 6px 0; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="https://sugalarm.com">
+        <img class="logo" src="logo.png" alt="Sugalarm — Smart Alerts. Real Peace." />
+      </a>
+      <p class="eyebrow">Early Access Program</p>
+      <h1>Help us build calmer nights for the people watching over someone they love.</h1>
+      <p class="lede">Sugalarm watches a household member&rsquo;s continuous glucose monitor (CGM) and
+        alerts the whole household &mdash; on the phone, the bedside kiosk, the watch, and trusted
+        emergency contacts &mdash; the moment blood sugar goes low or high. You&rsquo;re invited to
+        try it before everyone else and shape what it becomes.</p>
+    </header>
+
+    <section>
+      <h2>What you&rsquo;re joining</h2>
+      <p class="lead-in">Early Access is a small group of real households using Sugalarm day-to-day.
+        You&rsquo;ll get the app early, your feedback goes straight to the team, and the things you
+        report get fixed fast. It&rsquo;s free during testing.</p>
+    </section>
+
+    <section>
+      <h2>What we&rsquo;ll ask of you</h2>
+      <ul class="steps">
+        <li>
+          <span class="n">1</span>
+          <p class="t"><strong>Use it like it&rsquo;s yours.</strong>
+            <span>Connect your Dexcom or Libre, set your thresholds, and let Sugalarm run on your phone
+              or a bedside kiosk for a few weeks.</span></p>
+        </li>
+        <li>
+          <span class="n">2</span>
+          <p class="t"><strong>Try the alarms safely.</strong>
+            <span>Use the built-in <em>Test alarms</em> in Settings to hear how lows, highs, and urgent
+              alerts behave &mdash; no need to wait for a real event.</span></p>
+        </li>
+        <li>
+          <span class="n">3</span>
+          <p class="t"><strong>Tell us what&rsquo;s working and what isn&rsquo;t.</strong>
+            <span>Bugs, confusing screens, missed or late alerts, feature ideas &mdash; every note is read
+              by the team via the in-app feedback form.</span></p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="signup">
+      <h2>Request your invite</h2>
+      <p class="sub">Tell us a bit about you and which device you&rsquo;ll test on. We&rsquo;ll email you
+        an invite with everything you need to get started.</p>
+
+      <div class="form-card">
+        <!-- Cognito Forms — Early Access onboarding (form 2) -->
+        <script src="https://www.cognitoforms.com/f/seamless.js" data-key="B1J9PsIl8EeGPeNPdPnkGg" data-form="2"></script>
+        <noscript>
+          <p>This form needs JavaScript enabled. You can also email us to join at
+            <a href="mailto:support@sugalarm.com">support@sugalarm.com</a>.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <section>
+      <h2>What happens next</h2>
+      <ul class="steps">
+        <li>
+          <span class="n">→</span>
+          <p class="t"><strong>You&rsquo;ll get an invite by email.</strong>
+            <span>iPhone testers receive a TestFlight invite; Android testers receive a link to install.
+              We send these to the address you provide above.</span></p>
+        </li>
+        <li>
+          <span class="n">→</span>
+          <p class="t"><strong>Install &amp; sign in.</strong>
+            <span>Create your account, connect your CGM, and you&rsquo;re live &mdash; usually in a few
+              minutes.</span></p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>One important note on safety</h2>
+      <p class="note"><strong>Sugalarm is a secondary display &mdash; not a medical device.</strong>
+        Keep your CGM&rsquo;s own alarms turned on, and always confirm with a fingerstick if a reading and
+        how you feel don&rsquo;t match. Sugalarm helps the household stay aware; it doesn&rsquo;t replace
+        your CGM or your care team&rsquo;s guidance.</p>
+      <p class="alt">Questions before you sign up? Email us anytime at
+        <a href="mailto:support@sugalarm.com" class="ph">support@sugalarm.com</a>.</p>
+    </section>
+
+    <footer>
+      <h2>More information</h2>
+      <div class="links">
+        <a href="index.html">SMS Alerts &amp; Consent</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="feedback.html">Send feedback</a>
+        <a href="mailto:support@sugalarm.com" class="ph">[support@sugalarm.com]</a>
+      </div>
+      <p>Seecose, LLC &middot; 7650 County Road 48, Unit C, Rosharon, TX 77583</p>
+      <p>&copy; 2026 Seecose, LLC. Sugalarm is a product of Seecose, LLC.</p>
+    </footer>
+  </div>
+</body>
+</html>
