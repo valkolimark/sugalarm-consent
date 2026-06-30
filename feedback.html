@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback &amp; Support &mdash; Sugalarm</title>
+<meta name="description" content="Share feedback, report an issue, or request help with Sugalarm — smart glucose alerts for the whole household.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b1320;
+    --bg-elev: #121d30;
+    --bg-card: #16233a;
+    --line: #243349;
+    --text: #e7eefb;
+    --muted: #9fb1cc;
+    --faint: #6f819c;
+    --accent: #4f9cf5;
+    --accent-soft: rgba(79,156,245,0.12);
+    --drop-red: #e0445a;
+    --ok: #4ec98a;
+    --warn: #f3b14e;
+    --radius: 14px;
+    --maxw: 760px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(1200px 600px at 70% -10%, rgba(79,156,245,0.10), transparent 60%),
+      radial-gradient(900px 500px at -10% 10%, rgba(224,68,90,0.07), transparent 55%),
+      var(--bg);
+    color: var(--text);
+    font-family: "Public Sans", system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* Header */
+  header { padding: 56px 0 34px; border-bottom: 1px solid var(--line); }
+  .brand { display: inline-block; }
+  .logo { width: 340px; max-width: 80%; height: auto; display: block; }
+  .lede { margin-top: 26px; font-size: 19px; color: var(--muted); max-width: 60ch; }
+
+  /* Form section */
+  main { padding: 40px 0 8px; }
+  h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: 23px;
+    letter-spacing: -0.01em;
+    margin: 0 0 6px;
+  }
+  .sub { color: var(--muted); margin: 0 0 24px; max-width: 60ch; }
+
+  /* Light card holds the Cognito form so it stays legible on the dark page */
+  .form-card {
+    background: #ffffff;
+    color: #0b1320;
+    border-radius: var(--radius);
+    padding: 26px 24px;
+    box-shadow: 0 18px 50px rgba(0,0,0,0.35);
+    border: 1px solid var(--line);
+  }
+  .form-card a { color: #2563eb; }
+
+  .alt {
+    margin: 26px 0 0;
+    color: var(--muted);
+    font-size: 15px;
+  }
+  .alt .ph { color: var(--warn); }
+
+  /* Footer */
+  footer { padding: 40px 0 70px; margin-top: 36px; border-top: 1px solid var(--line); }
+  .links { display: flex; flex-wrap: wrap; gap: 18px; margin: 4px 0 22px; }
+  .ph { color: var(--warn); }
+  footer p { color: var(--faint); font-size: 14px; margin: 6px 0; }
+  footer h2 { font-size: 18px; margin-bottom: 10px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="https://sugalarm.com">
+        <img class="logo" src="logo.png" alt="Sugalarm — Smart Alerts. Real Peace." />
+      </a>
+      <p class="lede">We build Sugalarm for the people watching over someone they love. Tell us what&rsquo;s
+        working, what isn&rsquo;t, and what would help &mdash; every note is read by the team.</p>
+    </header>
+
+    <main>
+      <h2>Send us feedback</h2>
+      <p class="sub">Report a bug, request a feature, or ask for help. Leave your email if you&rsquo;d like
+        a reply.</p>
+
+      <div class="form-card">
+        <!-- Cognito Forms embed -->
+        <script src="https://www.cognitoforms.com/f/seamless.js" data-key="B1J9PsIl8EeGPeNPdPnkGg" data-form="1"></script>
+        <noscript>
+          <p>This form needs JavaScript enabled. You can also email us directly at
+            <a href="mailto:support@sugalarm.com">support@sugalarm.com</a>.</p>
+        </noscript>
+      </div>
+
+      <p class="alt">Prefer email? Reach us anytime at
+        <a href="mailto:support@sugalarm.com" class="ph">support@sugalarm.com</a>.</p>
+    </main>
+
+    <footer>
+      <h2>More information</h2>
+      <div class="links">
+        <a href="index.html">SMS Alerts &amp; Consent</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="mailto:support@sugalarm.com" class="ph">[support@sugalarm.com]</a>
+      </div>
+      <p>Seecose, LLC &middot; 7650 County Road 48, Unit C, Rosharon, TX 77583</p>
+      <p>&copy; 2026 Seecose, LLC. Sugalarm is a product of Seecose, LLC.</p>
+    </footer>
+  </div>
+</body>
+</html>
